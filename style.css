@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* 
+.links {
+    margin-left: 104px;
+    min-height: 24px;
+    min-width: 39px;
+}
+
+.links-1 {
+    margin-left: 18px;
+    min-height: 24px;
+    min-width: 82px;
+}
+
+.links-2 {
+    margin-left: 18px;
+    min-height: 24px;
+    min-width: 51px;
+} */
+
+.logopineapple {
+    align-self: flex-start;
+    height: 40px;
+    width: 25px;
+}
+
+.overlap-group {
+    align-items: center;
+    Background-color: #FFF;
+    display: flex;
+    height: 66px;
+    justify-content: flex0end;
+    min-width: 375px;
+    padding: 10px 10px;
+}
+
+.top-bar {
+    align-items: flex-start;
+    display: flex;
+    min-width: 381px;
+    position: absolute;
+    width: 375px;
+    height: 66px;
+    left: 0px;
+    top: 0px;
+}
+
+.image {
+    width: 375px;
+    height: 746px;
+}
