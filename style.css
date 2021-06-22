@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #B7E1F9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #6A707B;
+    height: 100vh;
+}
+
+.logo {
+    padding: 10px 0 16px 20px;
+}
+
+header {
+    display: flex;
+    background-color: #FFF;
+    height: 66px;
+    justify-content: space-between;
+}
+
+ul {
+     list-style: none;
+     display: flex;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+.nav {
+    margin: 21px auto;
+}
+
+.nav li a {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #6A707B;
+}
+
+.content-wrapper {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    height: 371px;
+    position: absolute;
+    top: 254px;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 34px;
+    color: #131821;
+    margin: 30px 0 10px;
+}
+
+.subheading {
+    line-height: 26px;
+    width: 295px;
+    margin-bottom: 20px;
+}
+
+.input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background: #FFF;
+    border-left: 4px solid #4066A5;
+}
+
+input[type=email] {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 18px 49px 18px 19px;
+    font-size: 17px;
+    color: #6A707B;
+    border: 1px solid #E3E3E4;
+}
+
+.icarrow {
+    position: absolute;
+    top: 38%;
+    right: 6%;
+}
+
+.tos {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.iccheckmark-small {
+    position: absolute;
+    left: 20px;
+    top: 225px;
+    background-color: #4066A5;
+    border: 1px solid #E3E3E4;
+    padding: 8px 6px;
+    border-radius: 3px;
+}
+
+.text {
+    font-size: 17px;
+    margin-left: 45px;
+}
+
+.text a {
+    color: #131821; 
+}
+
+.line {
+    margin-top: -10px;
+}
+
+.social-media li {
+    margin-right: 10px;
+    margin-top: -5px;
+    border: 2px solid #E3E3E4;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    padding: 15px;
+}
+
+.social-media img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: unset;
+}
+
+
+

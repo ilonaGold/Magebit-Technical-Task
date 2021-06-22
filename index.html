@@ -1,69 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magebit Technical Task</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Magebit Technical Task</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
         <header>
-            <img src="images/logo_pineapple.svg" alt="pineapple logo">
-            <img src="images/logo_pineapple-1.svg" alt="pineapple logo">
+            <div class="logo">
+            <picture>
+                <source media="(max-width: 481px)" srcset="images/logo_pineapple.svg" class="logo-pineapple-small">
+                <source media="(min-width: 482px)" srcset="images/logo_pineapple-1.svg" class="logo-pineapple-big">
+                <img src="images/image_summer-1.png" alt="pineapple with sunglasses and earphones">
+            </picture>
+            </div>
+            
             <nav>
-                <ul>
+                <ul class="nav">
                     <li><a href="#">About</a></li>
                     <li><a href="#">How it works</a></li>
                     <li><a href="#">Contact</a></li>    
                 </ul>
             </nav>
         </header>
-    </div>
-    <main>
-        <div>
-            <img src="images/image_summer.png" alt="pineapple with sunglasses and with earphones">
-            <img src="images/image_summer-1.png" alt="pineapple with sunglasses and with earphones">
-        </div>
-        <div>
-            <div>
-                <h1>Subscribe to newsletter</h1>
-                <p>Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
-                <div>
-                    <form action="/action_page.php">
+
+        <div class="wrapper">
+            <div class="bg col-right">
+                <picture>
+                    <source media="(max-width: 375px)" srcset="images/image_summer.png">
+                    <source media="(min-width: 376px)" srcset="images/image_summer-1.png">
+                    <img src="images/image_summer-1.png" alt="pineapple with sunglasses and with earphones">
+                </picture>   
+            </div>    
+        
+            <div class="content-wrapper col-left">
+                <main>
+                    <h1 class="heading">Subscribe to newsletter</h1>
+                    
+                    <p class="subheading">Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
+                    
+                    <form class="input" action="/action_page.php">
                         <input type="email" id="email" name="email" placeholder="Type your email address here...">
-                        <img src="images/ic_arrow.svg">
-                        <img src="images/ic_arrow-1.svg">
-                    </form>
-                </div>
-            </div>
-                <div>
-                    <div><img src="images/ic_checkmark.svg"></div>
-                    <div><img src="images/ic_checkmark-1.svg"></div>
-                        <p>
-                            <span>I agree to</span><span"> terms of service</span>
+                        <div class="icarrow">
+                            <img class="icarrow_small" src="images/ic_arrow.svg">
+                        </div>
+                     </form>
+                    
+                    <div class="tos">
+                        <div class="iccheckmark">
+                            <img class="iccheckmark-small" src="images/ic_checkmark.svg">
+                        </div>
+                        <p class="text">
+                            <span>I agree to </span><span><a href="#">terms of service</span>
                         </p>
-                        <hr>
-                <div>
-                    <div class="social-icons">
-                        <div><img src="images/ic_facebook.svg"></div>
-                        <div><img src="images/ic_facebook-1.svg"></div>
-                        <div><img src="images/ic_instagram.svg"></div>
-                        <div><img src="images/ic_instagram-1.svg"></div>
-                        <div><img src="images/ic_twitter.svg"></div>
-                        <div><img src="images/ic_twitter-1.svg"></div>
-                        <div><img src="images/ic_youtube.svg"></div>
-                        <div><img src="images/ic_youtube-1.svg"></div>
                     </div>
-                </div>
+                    
+                    <div class="line">
+                        <img class="line-small" src="images/line.svg">
+                    </div>
+                    
+                    <div class="base">
+                        <ul class="social-media">
+                            <li class="icfabebook" ><a href="#">
+                                <img class="icfacebook-small" src="images/ic_facebook.svg">
+                            </a></li>
+          
+                            <li class="icinstagram"><a href="#">
+                            <img class="icinstagram-small" src="images/ic_instagram.svg">
+                                
+                            </a></li>                  
+                            <li class="ictwitter"><a href="#">
+                                <img class="ictwitter-small" src="images/ic_twitter.svg">
+                            </a></li>
+                            
+                            <li class="icyoutube"><a href="#">
+                                <img class="icyoutube-small" src="images/ic_youtube.svg">
+                            </a></li>
+                        </ul>
+                    </div>
+                </main>
             </div>
         </div>
-    </main>
-    <script>src="app.js"</script>
-</body>
+        <script>src="app.js"</script>
+    </body>
 </html>
 
-      
