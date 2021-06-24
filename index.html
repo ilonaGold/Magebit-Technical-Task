@@ -11,111 +11,68 @@
     </head>
     
     <body>
-        <header>
+        <header class="top-bar">
             <div class="logo">
-            <picture>
-                <source media="(max-width: 481px)" srcset="images/logo_pineapple.svg" class="logo-pineapple-small">
-                <source media="(min-width: 482px)" srcset="images/logo_pineapple-1.svg" class="logo-pineapple-big">
-                <img src="images/image_summer-1.png" alt="pineapple with sunglasses and earphones">
-            </picture>
+                <picture>
+                    <source media="(max-width: 481px)" srcset="images/logo_small.svg" class="logo-small">
+                    <source media="(min-width: 482px)" srcset="images/logo_big.svg" class="logo-big">
+                    <img src="images/image_summer-1.png" alt="pineapple with sunglasses and earphones">
+                </picture>
             </div>
                 
             <nav>
                 <ul class="nav">
                     <li><a href="#">About</a></li>
                     <li><a href="#">How it works</a></li>
-                     <li><a href="#">Contact</a></li>    
+                    <li><a href="#">Contact</a></li>    
                 </ul>
             </nav>
         </header>
 
-        <div class="wrapper">
+        <main class="wrapper">
             <div class="col-right">
                 <picture>
-                    <source media="(max-width: 375px)" srcset="images/image_summer.png">
-                    <source media="(min-width: 376px)" srcset="images/image_summer-1.png">
+                    <source media="(max-width: 375px)" srcset="images/image_pineapple_small.png">
+                    <source media="(min-width: 376px)" srcset="images/image_pineapple_big.png">
                     <img src="images/image_summer-1.png" alt="pineapple with sunglasses and earphones">
                 </picture>   
             </div> 
             
             <div class="content-wrapper col-left">
-                <main>
-                    <h1 class="heading">Subscribe to newsletter</h1>
+                <h1 class="heading">Subscribe to newsletter</h1>
                     
-                    <p class="subheading">Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
+                <p class="subheading">Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
                     
-                    <form class="input" action="/action_page.php">
-                        <input type="email" id="email" name="email" placeholder="Type your email address here...">
+                <form class="input" action="/action_page.php">
+                    <input type="email" id="email" name="email" placeholder="Type your email address here...">
+                    <img src="images/arrow.svg" class="arrow-icon">
+                </form>
                     
-                        <div class="arrow">
-                            <picture>
-                                <source media="(max-width: 1023px)" srcset="images/ic_arrow.svg"> 
-                                <source media="(min-width: 1024px)" srcset="images/ic_arrow-1.svg"> 
-                                <img src="ic_arrow-1.svg">
-                            </picture>  
-                         </div>
-                     </form>
+                <div class="tos">
+                    <img src="images/checkmark.svg" class="chekmark">
+                     <p class="text">
+                        <span>I agree to </span><span><a href="#">terms of service</span>
+                    </p>
+                </div>
                     
-                    <div class="tos">
-                        <div class="checkmark">
-                            <picture>
-                                <source media="(max-width: 1023px)" srcset="images/ic_checkmark.svg"> 
-                                <source media="(min-width: 1024px)" srcset="images/ic_checkmark-1.svg"> 
-                                <img src="ic_checkmark-1.svg">
-                            </picture>  
-                         </div>
- 
-                        <p class="text">
-                            <span>I agree to </span><span><a href="#">terms of service</span>
-                        </p>
-                    </div>
+                <div class="line">
+                    <picture>
+                        <source media="(max-width: 1023px)" srcset="images/line_small.svg"> 
+                        <source media="(min-width: 1024px)" srcset="images/line_big.svg"> 
+                        <img src="line_big.svg">
+                    </picture>  
+                </div>
                     
-                    <div class="line">
-                        <picture>
-                            <source media="(max-width: 1023px)" srcset="images/line.svg"> 
-                            <source media="(min-width: 1024px)" srcset="images/line-1.svg"> 
-                            <img src="line-1.svg">
-                        </picture>   
-                    </div>
-                    
-                    <div class="base">
-                        <ul class="social-media">
-                            <li class="icfabebook" ><a href="#">
-                                <picture>
-                                    <source media="(max-width: 1023px)" srcset="images/ic_facebook.svg"> 
-                                    <source media="(min-width: 1024px)" srcset="images/ic_facebook-1.svg"> 
-                                    <img src="ic_facebook-1.svg">
-                                </picture>  
-                            </a></li>
-          
-                            <li class="icinstagram"><a href="#">
-                                <picture>
-                                    <source media="(max-width: 1023px)" srcset="images/ic_instagram.svg"> 
-                                    <source media="(min-width: 1024px)" srcset="images/ic_instagram-1.svg"> 
-                                    <img src="ic_instagram-1.svg">
-                                </picture> 
-                                
-                            </a></li>                  
-                            <li class="ictwitter"><a href="#">
-                                <picture>
-                                    <source media="(max-width: 1023px)" srcset="images/ic_twitter.svg"> 
-                                    <source media="(min-width: 1024px)" srcset="images/ic_twitter-1.svg"> 
-                                    <img src="ic_twitter-1.svg">
-                                </picture> 
-                            </a></li>
-                            
-                            <li class="icyoutube"><a href="#">
-                                <picture>
-                                    <source media="(max-width: 1023px)" srcset="images/ic_youtube.svg"> 
-                                    <source media="(min-width: 1024px)" srcset="images/ic_youtube-1.svg"> 
-                                    <img src="ic_youtube-1.svg">
-                                </picture> 
-                            </a></li>
-                        </ul>
-                    </div>
-                </main>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#"><span class="facebook-icon"></span></a></li>
+                        <li><a href="#"><span class="instagram-icon"></span></a></li>
+                        <li><a href="#"><span class="twitter-icon"></span></a></li>
+                        <li><a href="#"><span class="youtube-icon"></span></a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </main>
         <script>src="app.js"</script>
     </body>
 </html>
