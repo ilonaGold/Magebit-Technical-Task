@@ -62,6 +62,10 @@ body {
     line-height: 24px;
 }
 
+.about {
+    margin-right: -10px;
+}
+
 /* Main Content 
 ===============
 */
@@ -93,26 +97,32 @@ body {
 
 .input {
     position: relative;
-    display: inline-block;
-    width: 100%;
-    background: #FFF;
-}
+} 
 
-input[type=email] {
-    width: 100%;
-    height: 60px;
+.input input {
     box-sizing: border-box;
+    width: 100%;
+    height: 60px;;
     padding: 18px 0 18px 19px;
-    font-size: 16px;
     color: #6A707B;
+    font-size: 16px;
     border: 1px solid #E3E3E4;
     border-left: 4px solid #4066A5;
 }
 
-.arrow-icon {
+.input .arrow-icon {
     position: absolute;
     top: 23px;
     right: 13px;
+}
+
+.input input:hover, .input input:focus {
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06)
+}
+
+.input input:hover {
+  border: 1px solid #4066A5;
+  border-left: 4px solid #4066A5;
 }
 
 .tos {
@@ -124,10 +134,15 @@ input[type=email] {
     position: absolute;
     left: 20px;
     top: 227px;
-    background-color: #4066A5;
     border: 1px solid #E3E3E4;
+    background: #FFF;
     padding: 8px 6px;
+    box-sizing: border-box;
     border-radius: 3px;
+}
+
+.checkmark:active {
+    background-color: #4066A5;
 }
 
 .tos-text {
@@ -136,8 +151,16 @@ input[type=email] {
     margin-top: 0;
 }
 
-.text a {
+.tos-text a {
     color: #131821; 
+}
+
+.tos-text a:hover {
+    color: #4066A5;
+}
+
+.tos-text a:active {
+    color: #233759;
 }
 
 .line {
@@ -149,68 +172,67 @@ input[type=email] {
 =====================
 */
 
-.social-media li {
+.social-media ul {
+    list-style-type: none;
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media ul li {
+    cursor: pointer;
+    min-width: 46px;
+    min-height: 46px;
+    border: 2px solid #E3E3E4;
+    border-radius: 50%;
+    color:  #131821;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+    transition: .5s ease;
     margin: -10px 10px 30px 0;
 }
-
-.facebook-icon {
-    background: url("images/facebook_normal.svg");
-    display: inline-block;
-    width: 46px;
-    height: 46px;
+.social-media li:hover, 
+.social-media li:hover a, 
+.social-media li:active,
+.social-media li:active a {
+    color: #FFF;
+    opacity: 1;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
-.facebook-icon:hover {
-    background: no-repeat url("images/facebook_hover.svg");
+.social-media ul .facebook:hover {
+    background-color: #4267B2;
 }
 
-.facebook-icon:active {
-  background: no-repeat url("images/facebook_active.svg");
+.social-media ul .facebook:active {
+    background-color:  #2F4A80; 
 }
 
-.instagram-icon {
-    background: url("images/instagram_normal.svg");
-    display: inline-block;
-    width: 46px;
-    height: 46px;
+.social-media ul .insta:hover {
+    background-color: #E1306C;
 }
 
-.instagram-icon:hover {
-    background: no-repeat url("images/instagram_hover.svg");
+.social-media ul .insta:active {
+    background-color: #8F2762;
 }
 
-.instagram-icon:active {
-  background: no-repeat url("images/instagram_active.svg") no-repeat;
+.social-media ul .twitter:hover {
+    background-color: #1DA1F2;
 }
 
-.twitter-icon {
-    background: url("images/twitter_normal.svg");
-    display: inline-block;
-    width: 46px;
-    height: 46px;
+.social-media ul .twitter:active {
+    background-color:  #177FBF; 
 }
 
-.twitter-icon:hover {
-    background: no-repeat url("images/twitter_hover.svg");
+.social-media ul .youtube:hover {
+    background-color: #FF0000;
 }
 
-.twitter-icon:active {
-  background: no-repeat url("images/twitter_active.svg") no-repeat;
-}
-
-.youtube-icon {
-    background: no-repeat url("images/youtube_normal.svg");
-    display: inline-block;
-    width: 46px;
-    height: 46px;
-}
-
-.youtube-icon:hover {
-    background: no-repeat url("images/youtube_hover.svg");
-}
-
-.youtube-icon:active {
-  background: no-repeat url("images/youtube_active.svg") no-repeat;
+.social-media ul .youtube:active {
+    background-color: #CC0000;
 }
 
 /* Media Queries 
@@ -279,7 +301,7 @@ input[type=email] {
 @media (min-width: 1024px) {
     .col-left {
         width: 43%;
-        height: 80%;
+        height: 45%;
         padding-left: 45px;
     }
     .subheading {
@@ -316,7 +338,6 @@ input[type=email] {
         position: unset;
         background: unset;
         margin-top: 374px;
-        margin-left: 140px;
         padding: 0;
         margin-left: 0;
         margin-right: 0;
@@ -338,12 +359,12 @@ input[type=email] {
         padding-left: 52px;
     }
     .nav li a {
-        margin-right: 5px;
+        margin-right: 20px;
     }
     .heading {
         font-size: 29px;
         line-height: 44px;
-        margin-bottom: 15px;
+        margin-top: 0;
         padding-left: 140px;
     }
     .subheading {
@@ -354,34 +375,40 @@ input[type=email] {
         margin-bottom: 50px;
     }
     .input {
-        width: 470px; 
+        width: 578px; 
         padding-left: 100px;
         margin-left: 100px;
-        margin-top: -10px;
+        margin-top: 40px;
     }
-    input[type=email] {
-        width: 105%;
+    .input input {
+        width: 100%;
         height: 70px;
-        padding-left: 44px;
+        padding-left: 40px;
         margin-left: -100px;
     }
-    .arrow-icon {
+    .input .arrow-icon {
         position: absolute;
         top: 28px;
-        right: 22px;
+        right: 132px;
     }
     .checkmark {
         position: absolute;
-        top: 655px;
+        top: 662px;
         left: 145px;
     }
+    .tos {
+        margin-top: 50px;
+    }
     .tos-text {
-        margin: 10px 0 40px 165px;
+        margin: 10px 0 43px 165px;
     }
     .line {
         margin-left: 195px;
-        margin-bottom: 40px;
+        margin-top: -25px;
         width: 50%;
+    }
+    .social-media {
+        margin-top: 40px;
     }
 }  
 
@@ -399,7 +426,7 @@ input[type=email] {
         width: 60%;
     }
     .input {
-        width: 587px; 
+        width: 690px; 
     }
     .line {
         margin-left: 140px;
@@ -414,6 +441,12 @@ input[type=email] {
     }
 }
 
+@media (min-width: 1820px) {
+    .subheading {
+        margin-bottom: 75px;
+    }
+}
+
 @media (min-width: 1920px) {
     .col-left, .top-bar {
         width: 680px;
@@ -424,16 +457,27 @@ input[type=email] {
     .logo {
         padding-left: 90px;
      }
-    .nav {
-        margin-right: -10px;
+    .about {
+      margin-right: 0;
     }
-    .input {
-        width: 555px; 
+    .nav li {
+        margin-right: 10px;
+    }
+     .input {
+        width: 663px;
+        margin-top: -20px;
     }
     .checkmark {
+        top: 670px;
         left: 135px;
     }
+    .tos {
+        margin-top: 53px;
+        margin-bottom: 10px;
+    }
     .social-media {
-        margin-left: 0;
+        position: absolute;
+        left: 218px;
+        margin-top: 20px;
     }
 }
