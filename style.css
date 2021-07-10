@@ -74,18 +74,16 @@ body {
     position: absolute;
     top: 255px;
     width: 295px;
-    height: 371px;
+    /* height: 371px; */
     background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
     margin: 0 22px 0 18px;
     padding: 0 20px;
 }
 
 .success-icon {
-    visibility: hidden;
-    position: absolute;
-    top: 270px;
-    left: 140px;
-    z-index: 1;
+    display: none;
+    margin-top: 20px;
+    /* margin-bottom: 39px; */
 }
 
 .heading {
@@ -93,15 +91,19 @@ body {
     font-weight: normal;
     line-height: 34px;
     color: #131821;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 10px;
 }
 
 .subheading {
     width: 295px;
     line-height: 26px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
+
+/* Submission Form 
+==================
+*/
 
 .submissionForm {
     position: relative;
@@ -153,32 +155,75 @@ body {
     color: #E74C3C;
 }
 
-.submissionForm-checkbox {
+/* Custom Checkbox 
+==================
+*/
+
+.container {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+  
+.container input {
     position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
     left: 0;
-    top: 80px;
+    height: 25px;
+    width: 25px;
+    background-color: #FFF;
     border: 1px solid #E3E3E4;
-    background: #FFF;
-    width: 26px;
-    height: 26px;
-    box-sizing: border-box;
     border-radius: 3px;
 }
-
-/* .submissionForm-checkbox-input {
-    width: 26px;
-    height: 26px;
-    opacity: 1;
-} */
-
-.submissionFrom-checkmark:checked {
+  
+.container:hover input ~ .checkmark {
+    background-color: #EEE;
+}
+  
+.container input:checked ~ .checkmark {
     background-color: #4066A5;
 }
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container .checkmark:after {
+    left: 9px;
+    top: 2px;
+    width: 5px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* TOS Section 
+==============
+*/
 
 .submissionForm-tos-text {
     font-size: 17px;
     margin-left: 50px;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .submissionForm-tos-text a {
@@ -384,6 +429,11 @@ body {
     .nav li a {
         margin-right: 20px;
     }
+    .success-icon {
+        position: absolute;
+        top: 269px;
+        left: 140px;
+    }
     .heading {
         font-size: 29px;
         line-height: 44px;
@@ -423,8 +473,8 @@ body {
         font-size: 15px;
     }
     .submissionForm-checkbox {
-        margin-top: 20px;
-        margin-left: 40px;
+        margin-top: -5px;
+        margin-left: -60px;
     }
     .submissionForm-tos-text {
         margin-left: 10px;

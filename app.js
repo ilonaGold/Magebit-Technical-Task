@@ -14,6 +14,10 @@ subscribe.addEventListener("click", (e) => {
     checkInputs();
 });
 
+agree.addEventListener("change", (e) => {
+    errMsg.textContent = "";
+});
+
 function displayError(hintMsg) {
     errMsg.textContent = hintMsg;
     errMsg.style.visibility = "visible";
@@ -28,8 +32,8 @@ function checkInputs() {
     if (!agree.checked) {
         displayError("You must accept the terms and conditions");
         return
-    }
-    
+    } 
+
     if (emailValue.length === 0) { 
         displayError("Email address is required");
     } else if (!isEmailValid) { 
@@ -37,8 +41,8 @@ function checkInputs() {
     } else if (emailValue.slice(-2) === "co") { 
         displayError("We are not accepting subscriptions from Colombia emails");
     } else {
-        successIcon.style.visibility = "visible"; 
-        thanksMsg.textContent = "Thank you for subscribing!";
+        successIcon.style.display = "block"; 
+        thanksMsg.textContent = "Thanks for subscribing!";
         discountText.textContent = "You have successfully subscribed to our email listing. Check your email for the discount code.";
         form.style.display = "none";
     }
