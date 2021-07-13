@@ -5,7 +5,7 @@ body, html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     background-color: #B7E1F9;
     color: #6A707B;
     height: 100vh;
@@ -62,8 +62,8 @@ body {
     line-height: 24px;
 }
 
-.about {
-    margin-right: -10px;
+.nav li:first-of-type {
+    margin-right: 10px;
 }
 
 /* Main Content 
@@ -74,7 +74,7 @@ body {
     position: absolute;
     top: 255px;
     width: 295px;
-    /* height: 371px; */
+    height: 371px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
     margin: 0 22px 0 18px;
     padding: 0 20px;
@@ -82,8 +82,8 @@ body {
 
 .success-icon {
     display: none;
-    margin-top: 20px;
-    /* margin-bottom: 39px; */
+    margin-top: 30px;
+    margin-bottom: 39px;
 }
 
 .heading {
@@ -91,14 +91,13 @@ body {
     font-weight: normal;
     line-height: 34px;
     color: #131821;
-    /* margin-top: 30px; */
-    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .subheading {
     width: 295px;
     line-height: 26px;
-    /* margin-bottom: 20px; */
+    margin-top: 10px;
 }
 
 /* Submission Form 
@@ -107,25 +106,26 @@ body {
 
 .submissionForm {
     position: relative;
-    padding-bottom: 20px;
+    margin-top: 20px;
 } 
 
 .submissionForm-email-input {
     box-sizing: border-box;
     width: 100%;
     height: 60px;
-    padding-left: 19px;
+    padding: 18px 10px 18px 19px;
     color: #6A707B;
     font-family: inherit;
     font-size: 16px;
     border: 1px solid #E3E3E4;
     border-left: 4px solid #4066A5;
+    caret-color: #4066A5;
 }
 
 .submissionForm-submit-button {
     position: absolute;
-    top: 22px;
-    right: 13px;
+    top: 21px;
+    right: 15px;
     cursor: pointer;
     background-color: transparent;
     border: transparent;
@@ -151,7 +151,7 @@ body {
 }
 
 .error-message {
-    visibility: hidden;
+    display: none;
     color: #E74C3C;
 }
 
@@ -162,9 +162,7 @@ body {
 .container {
     display: block;
     position: relative;
-    margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
 }
   
 .container input {
@@ -174,7 +172,7 @@ body {
     height: 0;
     width: 0;
 }
-  
+
 .checkmark {
     position: absolute;
     top: 0;
@@ -206,9 +204,9 @@ body {
   
 .container .checkmark:after {
     left: 9px;
-    top: 2px;
+    top: 3px;
     width: 5px;
-    height: 14px;
+    height: 13px;
     border: solid white;
     border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
@@ -220,10 +218,15 @@ body {
 ==============
 */
 
+.submissionForm-tos-group {
+    padding-top: 20px;
+}
+
 .submissionForm-tos-text {
+    display: block;
     font-size: 17px;
-    margin-left: 50px;
-    margin-top: 3px;
+    margin-left: 46px;
+    margin-top: 5px;
 }
 
 .submissionForm-tos-text a {
@@ -239,26 +242,22 @@ body {
 }
 
 .line-content-divider {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 20px auto;
+    width: 295px;
+    height: 1px;
+    background: #E3E3E4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Social Media Icons 
-=====================
-*/
-
-.social-media-icons{
-    display: flex;
-    justify-content: center;
-}
+===================*/
 
 .social-media-icons ul {
     display: flex;
-    width: 250px;
-    justify-content: space-between;
-    align-items: center;
     padding: 0;
-}
+    margin-left: 33px;
+ }
 
 .social-media-icons ul li {
     display: flex;
@@ -269,10 +268,11 @@ body {
     border: 2px solid #E3E3E4;
     border-radius: 50%;
     color: #131821;
-    opacity: 0.3;
+    opacity: 0.7;
     transition: .5s ease;
     cursor: pointer;
-}
+    margin-right: 10px;
+ }
 
 .social-media-icons li:hover, 
 .social-media-icons li:hover a, 
@@ -334,20 +334,14 @@ body {
         margin-right: 15px;
         margin-bottom: 5px;
     }
-    .social-media-icons {
-        margin-left: 10px;
-        margin-top: -30px;
-    }
 }
+
 @media (min-width: 481px) {
     .logo {
         padding-left: 20px;
     }
-    nav li {
+    .nav li:first-of-type {
         margin-right: 20px;
-    }
-    .about {
-        margin: unset;
     }
 } 
 
@@ -371,12 +365,27 @@ body {
     .subheading {
         width: 90%;
     }
+    .line-content-divider {
+        width: 340px;
+        margin-bottom: 5px;
+    }
+    .social-media-icons{
+        display: flex;
+        justify-content: center;
+     }
+    .social-media-icons ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 280px;
+    }
 }
 
 @media (min-width: 1024px) {
     .col-left {
         width: 43%;
-        height: 58%;
+        height: 45%;
         padding-left: 45px;
     }
     .subheading {
@@ -388,17 +397,14 @@ body {
     .submissionForm-tos-text {
         margin-left: 50px;
     }
-    .line-content-divider {
-        margin: 15px;
-    }
     .social-media-icons {
-        margin-left: -50px;
+        margin-left: -30px;
     }
 }
 
 @media (min-width: 1200px) {
     body {
-        background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+        background: #FFF;
         height: 100%;
     }
     .col-left {
@@ -431,7 +437,7 @@ body {
     }
     .success-icon {
         position: absolute;
-        top: 269px;
+        top: 239px;
         left: 140px;
     }
     .heading {
@@ -465,7 +471,7 @@ body {
         left: 510px;
     }
     .error-message {
-        display: block;
+        display: none;
         position: absolute;
         left: -4px;
         top: 68px;
@@ -473,16 +479,19 @@ body {
         font-size: 15px;
     }
     .submissionForm-checkbox {
-        margin-top: -5px;
+        margin-top: 28px;
         margin-left: -60px;
     }
     .submissionForm-tos-text {
-        margin-left: 10px;
-        margin-top: 35px;
+        margin-top: 33px;
+        margin-left: -20px;
     }
     .line-content-divider {
-        width: 300px;
-        margin: 60px 0 40px -15px;
+        box-shadow: unset;
+        width: 400px;
+        margin-top: 50px;
+        margin-left: 140px;
+        margin-bottom: 35px;
     }
 }  
 
@@ -508,7 +517,7 @@ body {
         left: 630px;
     }
     .line-content-divider {
-        margin-left: 0;
+        margin-left: 140px;
     }
     .social-media-icons {
         margin-left: -15px;
@@ -520,7 +529,7 @@ body {
         margin-bottom: 75px;
     }
     .line-content-divider {
-        width: 520px;
+        width: 620px;
     }
 }
 
@@ -562,11 +571,10 @@ body {
     }
     .line-content-divider {
         width: 400px;
-        margin-left: -50px;
+        margin-left: 140px;
     }
     .social-media-icons {
         position: absolute;
-        left: 218px;
-        margin-top: 20px;
+        left: 188px;
     }
 }

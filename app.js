@@ -8,6 +8,7 @@ const successIcon = document.getElementById("success-icon");
 const thanksMsg = document.getElementById("heading");
 const discountText = document.getElementById("subheading");
 const form = document.getElementById("submissionForm");
+const line = document.getElementById("line-content-divider");
 
 subscribe.addEventListener("click", (e) => {
     e.preventDefault();
@@ -20,7 +21,7 @@ agree.addEventListener("change", (e) => {
 
 function displayError(hintMsg) {
     errMsg.textContent = hintMsg;
-    errMsg.style.visibility = "visible";
+    errMsg.style.display = "block";
     email.style.border = "2px solid #E74C3C";
 }
 
@@ -43,8 +44,10 @@ function checkInputs() {
     } else {
         successIcon.style.display = "block"; 
         thanksMsg.textContent = "Thanks for subscribing!";
+        thanksMsg.style.fontSize = "21px";
         discountText.textContent = "You have successfully subscribed to our email listing. Check your email for the discount code.";
         form.style.display = "none";
+        line.style.boxShadow = "none";
     }
 }
 
@@ -52,3 +55,4 @@ function isEmail(email) {
     
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
