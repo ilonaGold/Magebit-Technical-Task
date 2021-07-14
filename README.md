@@ -6,14 +6,14 @@
 
 The challenge was to first recreate a mobile and then desktop version of the site, fully responsive. Then add javascript form validation and finally the PHP backend to handle form submission and MySQL to save data in a database.
 
-I was given a mockup in Figma: https://www.figma.com/file/p4jxR7jTYFqSaVewJTsHFj/Mid-Junior-Web-Developer-Test-Task-1?node-id=0%3A1
+I was given a mockup in Figma: [Magebit - Mid/Junior Web Developer Test](https://www.figma.com/file/p4jxR7jTYFqSaVewJTsHFj/Mid-Junior-Web-Developer-Test-Task-1?node-id=0%3A1)
 
 ### Screenshots
 
 
 ### Links 
 
-Solution URL: https://github.com/ilonaGold/Magebit-Technical-Task
+Solution URL: [Magebit - Mid/Junior Web Developer Test](https://github.com/ilonaGold/Magebit-Technical-Task)
 
 Live SiteURL: 
 
@@ -64,25 +64,25 @@ Live SiteURL:
 
 ### Useful resources
 
-[Magebit Technical Task solution]https://help.figma.com/hc/en-us/articles/360039956974-Measure-distances-between-layers - This helped me to measure distance between layers in Figma.
+[Magebit - Mid/Junior Web Developer Test](https://help.figma.com/hc/en-us/articles/360039956974-Measure-distances-between-layers) This helped me to measure distance between layers in Figma.
   
-[Magebit Technical Task solution]https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images - This is an execellent article about how to make images responsive.
+[Magebit - Mid/Junior Web Developer Test](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) This is an execellent article about how to make images responsive.
   
-[Magebit Technical Task solution]https://www.deplabs.com/2020/07/14/perfect-responsive-breakpoint-strategy/ - This article helped to choose major breakpoints for responsive design.
+[Magebit - Mid/Junior Web Developer Test](https://www.deplabs.com/2020/07/14/perfect-responsive-breakpoint-strategy/) This article helped to choose major breakpoints for responsive design.
   
-[Magebit Technical Task solution]https://www.collaborativehausmarketing.com/blog/2018/12/18/spice-up-your-documents-with-these-4-font-alternatives-to-arial - This article helped me to choose fonts.
+[Magebit - Mid/Junior Web Developer Test](https://www.collaborativehausmarketing.com/blog/2018/12/18/spice-up-your-documents-with-these-4-font-alternatives-to-arial) This article helped me to choose fonts.
   
-[Magebit Technical Task solution]https://www.youtube.com/watch?v=qm0IfG1GyZU - This video gave me some ideas how to shorten my code.
+[Magebit - Mid/Junior Web Developer Test](https://www.youtube.com/watch?v=qm0IfG1GyZU) This video gave me some ideas how to shorten my code.
   
-[Magebit Technical Task solution]https://css-tricks.com/change-color-of-svg-on-hover/ - This is an amazing article that helped me to understand how to change color of svg images.
+[Magebit - Mid/Junior Web Developer Test](https://css-tricks.com/change-color-of-svg-on-hover/) This is an amazing article that helped me to understand how to change color of svg images.
   
-[Magebit Technical Task solution]https://www.w3schools.com/howto/howto_css_custom_checkbox.asp This information helped me to create a custom checkbox.
+[Magebit - Mid/Junior Web Developer Test](https://www.w3schools.com/howto/howto_css_custom_checkbox.asp) This information helped me to create a custom checkbox.
   
-[Magebit Technical Task solution]https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events This resourse gave me insigths into pointer events and how to properly use them.
+[Magebit - Mid/Junior Web Developer Test](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) This resourse gave me insigths into pointer events and how to properly use them.
   
-[Magebit Technical Task solution]https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event From this article I learnt when and how to use cange events.
+[Magebit - Mid/Junior Web Developer Test](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event) From this article I learnt when and how to use cange events.
   
-[Magebit Technical Task solution]https://www.javascripttutorial.net/javascript-dom/javascript-form/ I came across this tutorial on Javascript form after having created mine but it was very insingtful to compare two approaches.
+[Magebit - Mid/Junior Web Developer Test](https://www.javascripttutorial.net/javascript-dom/javascript-form/) I came across this tutorial on Javascript form after having created mine but it was very insingtful to compare two approaches.
 
 ### Final Thoughts
 
