@@ -120,24 +120,22 @@ body {
     border: 1px solid #E3E3E4;
     border-left: 4px solid #4066A5;
     caret-color: #4066A5;
+    outline: none;
 }
 
 .submissionForm-submit-button {
+    pointer-events: none;
     position: absolute;
     top: 21px;
     right: 15px;
-    cursor: pointer;
+    cursor: pointer !important;
     background-color: transparent;
     border: transparent;
 }
 
 .submissionForm-submit-button path {
-    fill: #4066A5;
+    fill: #E3E3E4;
     transition: .5s ease;
-}
-
-.submissionForm-submit-button:hover path {
-    opacity: 1;
 }
 
 .submissionForm-email-input:hover, .submissionForm-email-input:focus {
@@ -152,7 +150,10 @@ body {
 
 .error-message {
     display: none;
+    position: absolute;
+    top: 62px;
     color: #E74C3C;
+    font-size: 11px;
 }
 
 /* Custom Checkbox 
@@ -177,8 +178,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 26px;
+    width: 26px;
     background-color: #FFF;
     border: 1px solid #E3E3E4;
     border-radius: 3px;
@@ -195,11 +196,11 @@ body {
 .checkmark:after {
     content: "";
     position: absolute;
-    display: none;
+    visibility: hidden;
 }
   
 .container input:checked ~ .checkmark:after {
-    display: block;
+    visibility: visible;
 }
   
 .container .checkmark:after {
@@ -466,14 +467,14 @@ body {
         margin-left: -100px;
     }
     .submissionForm-submit-button {
+        
         position: absolute;
         top: 27px;
         left: 510px;
+        cursor: pointer;
     }
     .error-message {
-        display: none;
-        position: absolute;
-        left: -4px;
+        left: -6px;
         top: 68px;
         padding: 8px; 
         font-size: 15px;
