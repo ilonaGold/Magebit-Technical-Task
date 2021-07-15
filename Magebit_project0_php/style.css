@@ -87,10 +87,9 @@ body {
 }
 
 .heading {
-    font-size: 21px;
+    font-size: 22px;
     font-weight: normal;
     line-height: 34px;
-    letter-spacing: 0.1px;
     color: #131821;
     margin-top: 30px;
 }
@@ -127,8 +126,8 @@ body {
 .submissionForm-submit-button {
     pointer-events: none;
     position: absolute;
-    top: 22px;
-    right: 10px;
+    top: 21px;
+    right: 15px;
     cursor: pointer !important;
     background-color: transparent;
     border: transparent;
