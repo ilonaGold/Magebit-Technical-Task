@@ -57,7 +57,7 @@ Live SiteURL: [Magebit - Mid/Junior Web Developer Test](https://pineapple-projec
   
 ### Continued development
 
-I did not complete back-end but will continue to do so for my own development.  
+Though my current knowledge of backend technologies did not allow me to complete this part of the test, I gave it my best try and added some PHP files to the project to demonstrate my willingness to learn and the ability to acquire new skills. I will definitely continue to learn PHP and MySQL and plan to complete this part of the project for my own development on a later stage of my learning journey.  
 
 ### Useful resources
 
