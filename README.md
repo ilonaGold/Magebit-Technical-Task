@@ -4,7 +4,7 @@
 
 ### The challenge
 
-The challenge was to first recreate a mobile and then desktop version of the site, fully responsive. Then add javascript form validation and finally the PHP backend to handle form submission and MySQL to save data in a database.
+The challenge was to first recreate a mobile and then desktop version of the site, fully responsive. Then add Javascript form validation and finally the PHP backend to handle form submission and MySQL to save data in a database.
 
 I was given a mockup in Figma: [Magebit - Mid/Junior Web Developer Test](https://www.figma.com/file/p4jxR7jTYFqSaVewJTsHFj/Mid%2FJunior---Web-Developer-Test-%7C-Task-1?node-id=0%3A1)
 
